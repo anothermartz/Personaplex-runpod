@@ -9,7 +9,6 @@
 6. **Set up your RunPod Secret:** Create a [RunPod Secret](https://www.console.runpod.io/user/secrets/create)
    * **Key:** `HF_TOKEN`
    * **Value:** *(Paste your Hugging Face token here)*
-   *(RunPod will now automatically inject this securely into your pods so you never have to type it again).*
 
 ## 🚀 How to Deploy
 1. Click this one-click link: **[Deploy PersonaPlex Template](https://www.runpod.io/console/deploy?template=q2892w1ybr&ref=4x7tlpte)**
