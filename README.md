@@ -8,7 +8,7 @@ This script automates the environment setup, handles Blackwell-specific driver r
 
 The easiest way to run this is using the pre-configured RunPod template:
 
-### [➡️ Click here to Deploy on RunPod](https://www.runpod.io/console/deploy?template=YOUR_TEMPLATE_ID_HERE)
+### [➡️ Click here to Deploy on RunPod](https://www.runpod.io/console/deploy?template=q2892w1ybr&ref=4x7tlpte)
 
 > **Important:** Once you click deploy, you **must** click **"Edit Template"** and enter your Hugging Face "Read" Token into the `HF_TOKEN` Environment Variable field.
 
