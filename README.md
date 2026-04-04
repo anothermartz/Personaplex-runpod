@@ -1,34 +1,27 @@
 # Automated [PersonaPlex](https://github.com/NVIDIA/personaplex) setup for RunPod
 
-### Pre-requisites:
-A free huggingface account: https://huggingface.co <br>
-A RunPod account: https://www.runpod.io/ <br>
-(minimum credits amount is $10, but you can put this towards any AI template so have a look around!) 
+## 📋 Pre-requisites:
+1. **Hugging Face Account:** Create a free account at [huggingface.co](https://huggingface.co).
+2. **License Agreement:** You must accept the terms on [NVIDIA's PersonaPlex page](https://huggingface.co/nvidia/personaplex-7b-v1).
+3. **Generate an HF Token:** Go to your [Hugging Face Token Settings](https://huggingface.co/settings/tokens/new?tokenType=read), create a "Read" token, and copy the `hf_...` string.
+4. **RunPod Account:** Create an account at [RunPod.io](https://www.runpod.io/).
+5. **Add Funds:** Add minimum credits to RunPod ($10 minimum, but this covers ~30 hours of high-end GPU time).
+6. **Set up your RunPod Secret:** Go to your **RunPod Settings -> Secrets**. Add a new secret:
+   * **Key:** `HF_TOKEN`
+   * **Value:** *(Paste your Hugging Face token here)*
+   *(RunPod will now automatically inject this securely into your pods so you never have to type it again).*
 
 ## 🚀 How to Deploy
+1. Click this one-click link: **[Deploy PersonaPlex Template](https://www.runpod.io/console/deploy?template=q2892w1ybr&ref=4x7tlpte)**
+2. Select your GPU. **Make sure to pick a datacenter close to you (e.g., US, EU, CA) for the lowest voice latency!** Recommended GPUs:
+   * **RTX 3090 or 4090:** Best balance of extreme speed and cheap hourly price.
+   * **RTX 4500 PRO (Blackwell) / L40 / A5000:** Excellent enterprise alternatives.
+   *(Note: Any GPU with 16GB+ VRAM will work).*
+3. Under **Customize Deployment**, ensure your "Volume Disk" is set to at least **40GB**.
+4. Scroll to the bottom and click **Deploy On-Demand**. 
 
-https://console.runpod.io/user/storage/create
+> ⏳ **Initial Setup Time:** The very first time you boot the pod, it will take about **15 minutes** to download the 16GB AI model. Check the pod's "Logs" to see when it says "Launching PersonaPlex". If you just "Stop" the pod when you are done playing, it will boot instantly the next time!
 
-The easiest way to run this is using the pre-configured RunPod template:
-
-### [➡️ Click here to Deploy on RunPod](https://www.runpod.io/console/deploy?template=q2892w1ybr&ref=4x7tlpte)
-
-> **Important:** Once you click deploy, you **must** click **"Edit Template"** and enter your Hugging Face "Read" Token into the `HF_TOKEN` Environment Variable field.
-
-## ✨ Features
-* **Blackwell Optimized:** Automatically detects and installs PyTorch Nightly for RTX 4500 PRO and other Blackwell GPUs.
-* **Fresh Drive Support:** Automatically clones repositories and builds virtual environments if the network volume is empty.
-* **Persistent Storage:** Installs all models (16GB) and environments to `/workspace` to survive pod termination/restarts.
-* **Architecture Aware:** Switches between `venv_blackwell` and `venv_standard` automatically based on the GPU you rent.
-
-## 🛠️ Technical Details
-
-This repository hosts the `autostart.sh` script used by the RunPod template. It performs the following on boot:
-1. Validates the `HF_TOKEN`.
-2. Checks for existing files in `/workspace`.
-3. Detects GPU Compute Capability.
-4. Initializes the correct Python virtual environment.
-5. Launches the PersonaPlex server on port `8998`.
-
-## ⚖️ Credits
-This is a community-maintained startup wrapper for [NVIDIA PersonaPlex](https://github.com/NVIDIA/personaplex).
+> ⚠️ **Billing Warning: Stop vs. Terminate**
+> * **Stopping** the pod pauses the expensive GPU charges, but you will still be charged a few cents a day for the 40GB storage drive holding your model.
+> * **Terminating** the pod deletes the drive and stops **all** charges completely. If you are done playing for a while and don't mind waiting 15 minutes to redownload the model next time, always choose Terminate!
