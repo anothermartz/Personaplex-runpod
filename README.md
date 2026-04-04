@@ -16,9 +16,13 @@
    * **RTX 3090 or 4090:** Best balance of extreme speed and cheap hourly price.
    * **RTX 4500 PRO (Blackwell) / L40 / A5000:** Excellent enterprise alternatives.
    *(Note: Any GPU with 16GB+ VRAM will work).*
-3. Scroll to the bottom and click **Deploy On-Demand**. 
+3. In Storage Configuration, Select "Volume Disk" and make sure it's 40GB.
+4. Scroll to the bottom and click **Deploy On-Demand**. 
+5. Look at the "Connect" Tab and wait for "Port 8998 PersonaPlex" to be green, then click on it.
 
-> ⏳ **Initial Setup Time:** The very first time you boot the pod, it will take about **15 minutes** to download the 16GB AI model. Check the pod's "Logs" to see when it says "Launching PersonaPlex". If you just "Stop" the pod when you are done playing, it will boot instantly the next time!
+
+> ⏳ **Initial Setup Time:** The very first time you boot the pod, it will take about **15 minutes** to download the 16GB AI model. Check the pod's "Logs" tab to see when it says "Launching PersonaPlex". If you just "Stop" the pod when you are done playing, it will boot instantly the next time!
+
 
 > ⚠️ **Billing Warning: Stop vs. Terminate**
 > * **Stopping** the pod pauses the expensive GPU charges, but you will still be charged a few cents a day for the 40GB storage drive holding your model.
