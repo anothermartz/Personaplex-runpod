@@ -18,7 +18,7 @@
    *(Note: Any GPU with 16GB+ VRAM will work).*
 3. In Storage Configuration, Select "Volume Disk" and make sure it's 40GB.
 4. Scroll to the bottom and click **Deploy On-Demand**. 
-5. Look at the "Connect" Tab and wait for "Port 8998 PersonaPlex" to be green, then click on it. If there's a cloudfare error, check the "log" tab.
+5. Look at the "Connect" Tab and wait for "Port 8998 PersonaPlex" to be green, then click on it. If there's a cloudfare error, check the "Logs" tab.
 
 
 > ⏳ **Initial Setup Time:** The very first time you boot the pod, it will take about **15 minutes** to download the 16GB AI model. Check the pod's "Logs" tab to see when it says "Launching PersonaPlex". If you just "Stop" the pod when you are done playing, it will boot instantly the next time!
