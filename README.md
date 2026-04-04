@@ -6,7 +6,7 @@
 3. **Generate an HF Token:** Go to your [Hugging Face Token Settings](https://huggingface.co/settings/tokens/new?tokenType=read), create a "Read" token, and copy the `hf_...` string.
 4. **RunPod Account:** Create an account at [RunPod.io](https://www.runpod.io/).
 5. **Add Funds:** Add minimum credits to RunPod ($10 minimum, but this covers ~30 hours of high-end GPU time).
-6. **Set up your RunPod Secret:** Go to your **RunPod Settings -> Secrets**. Add a new secret:
+6. **Set up your RunPod Secret:** Create a [RunPod Secrets](https://www.console.runpod.io/user/secrets/create)
    * **Key:** `HF_TOKEN`
    * **Value:** *(Paste your Hugging Face token here)*
    *(RunPod will now automatically inject this securely into your pods so you never have to type it again).*
