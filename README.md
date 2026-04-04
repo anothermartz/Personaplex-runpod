@@ -1,10 +1,13 @@
-# PersonaPlex RunPod One-Click
+# Automated [PersonaPlex](https://github.com/NVIDIA/personaplex) setup for RunPod
 
-A hardened, architecture-aware startup script for deploying [NVIDIA PersonaPlex](https://github.com/NVIDIA/personaplex) on RunPod.
-
-This script automates the environment setup, handles Blackwell-specific driver requirements (Compute 12.0), and ensures persistence across pod restarts.
+### Pre-requisites:
+A free huggingface account: https://huggingface.co <br>
+A RunPod account: https://www.runpod.io/ <br>
+(minimum credits amount is $10, but you can put this towards any AI template so have a look around!) 
 
 ## 🚀 How to Deploy
+
+https://console.runpod.io/user/storage/create
 
 The easiest way to run this is using the pre-configured RunPod template:
 
