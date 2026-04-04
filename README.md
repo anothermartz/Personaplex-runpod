@@ -1,4 +1,5 @@
 # Automated [PersonaPlex](https://github.com/NVIDIA/personaplex) setup for RunPod
+Based on https://github.com/surebabu2007/Personaplex-oneclicker
 
 ## 📋 Pre-requisites:
 1. **Hugging Face Account:** Create a free account at [huggingface.co](https://huggingface.co).
