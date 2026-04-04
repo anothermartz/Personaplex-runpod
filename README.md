@@ -12,11 +12,12 @@
 
 ## 🚀 How to Deploy
 1. Click this one-click link: **[Deploy PersonaPlex Template](https://www.runpod.io/console/deploy?template=q2892w1ybr&ref=4x7tlpte)**
-2. Select your GPU. **Make sure to pick a datacenter close to you (e.g., US, EU, CA) for the lowest voice latency!** Recommended GPUs:
-   * **RTX 3090 or 4090 (24GB):** The sweet spot. Best balance of extreme speed and price for real-time conversation.
-   * **RTX 4500 PRO / L40 / A5000:** Excellent high-end enterprise alternatives.
-   * **RTX A4500 (20GB):** Budget option. It works, but the AI may have slightly slower response times or silent pauses.
-   *(⚠️ NOTE: You MUST select a GPU with at least **20GB** of VRAM. Cheaper 16GB cards like the A4000 or RTX 4080 will crash with an Out of Memory error!)*
+2. Select your GPU. **Make sure to pick a datacenter close to you (e.g., US, EU, CA) for the lowest voice latency!** <br>
+<ins>Recommended GPUs:</ins>
+   * **RTX 3090 / PRO 4500 / 4090:** The sweet spot. Best balance of extreme speed and price for real-time conversation.
+   * **RTX A4500 / A5000 / RTX 4000 Ada:** Budget options. They work, but the AI may have slightly slower response times or silent pauses.
+   * **RTX 5090 /  Other expensive GPU's:** They'll work great but are completely overkill. <br>
+   *(⚠️ NOTE: You MUST select a GPU with at least **20GB** of VRAM. 16GB cards like the A4000 or 2000 Ada will crash with an Out of Memory error!)*
 3. In Storage Configuration, Select "Volume Disk" and make sure it's 40GB.
 4. Scroll to the bottom and click **Deploy On-Demand**. 
 5. Look at the "Connect" Tab and wait for "Port 8998 PersonaPlex" to be green, then click on it. If there's a Cloudflare error, check the "Logs" tab for errors.
