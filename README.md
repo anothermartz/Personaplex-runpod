@@ -15,9 +15,9 @@ Based on https://github.com/surebabu2007/Personaplex-oneclicker
 1. Click this one-click link: **[Deploy PersonaPlex Template](https://www.runpod.io/console/deploy?template=q2892w1ybr&ref=4x7tlpte)**
 2. Select your GPU. **Make sure to pick a datacenter close to you (e.g., US, EU, CA) for the lowest voice latency!** <br>
 <ins>Recommended GPUs:</ins>
-   * **RTX 3090 / PRO 4500 / 4090:** The sweet spot. Best balance of extreme speed and price for real-time conversation.
-   * **RTX A4500 / A5000 / RTX 4000 Ada:** Budget options. They work, but the AI may have slightly slower response times or silent pauses.
-   * **RTX 5090 /  Other expensive GPUs:** They'll work great but are completely overkill. <br>
+   * **RTX 3090 / PRO 4500 / 4090:** Best balance of speed and price.
+   * **RTX A4500 / A5000 / RTX 4000 Ada:** Budget options. They work, but the AI may have slightly slower response times or long silences.
+   * **RTX 5090 /  Other expensive GPUs:** They'll work great but are completely overkill, only use if availability calls for it. <br>
    *(⚠️ NOTE: You MUST select a GPU with at least **20GB** of VRAM. 16GB cards like the A4000 or 2000 Ada will crash with an Out of Memory error!)*
 3. In Storage Configuration, Select "Volume Disk" and make sure it's 40GB.
 4. Scroll to the bottom and click **Deploy On-Demand**. 
