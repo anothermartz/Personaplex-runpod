@@ -1,7 +1,7 @@
 # Automated [PersonaPlex](https://github.com/NVIDIA/personaplex) setup for RunPod
 Based on https://github.com/surebabu2007/Personaplex-oneclicker
 
-## 📋 Pre-requisites:
+## 📋 Pre-requisites (one time only):
 1. **Hugging Face Account:** Create a free account at [huggingface.co](https://huggingface.co).
 2. **License Agreement:** You must accept the terms on [NVIDIA's PersonaPlex page](https://huggingface.co/nvidia/personaplex-7b-v1).
 3. **Generate an HF Token:** Go to your [Hugging Face Token Settings](https://huggingface.co/settings/tokens/new?tokenType=read), create a "Read" token, and copy the `hf_...` string.
@@ -13,13 +13,14 @@ Based on https://github.com/surebabu2007/Personaplex-oneclicker
 
 ## 🚀 How to Deploy
 1. Click this one-click link: **[Deploy PersonaPlex Template](https://www.runpod.io/console/deploy?template=q2892w1ybr&ref=4x7tlpte)**
-2. Select your GPU. **Make sure to pick a datacenter close to you (e.g., US, EU, CA) for the lowest voice latency!** <br>
-<ins>Recommended GPUs:</ins>
-   * **RTX 3090 / PRO 4500 / 4090:** Best balance of speed and price.
-   * **RTX A4500 / A5000 / RTX 4000 Ada:** Budget options. They work, but the AI may have slightly slower response times or long silences.
-   * **RTX 5090 /  Other expensive GPUs:** They'll work great but are completely overkill, only use if availability calls for it. <br>
-   *(⚠️ NOTE: You MUST select a GPU with at least **20GB** of VRAM. 16GB cards like the A4000 or 2000 Ada will crash with an Out of Memory error!)*
-3. In Storage Configuration, Select "Volume Disk" and make sure it's 40GB.
+2. Click the "Any Region" drop-down and select yours, then select a GPU: <br>
+*(⚠️ NOTE: You MUST select a GPU with at least **20GB** of VRAM or it will crash with an Out of Memory error!)* <br> <br>
+<ins>**Recommended GPUs:**</ins>
+   * **RTX 3090 / RTX A6000 / RTX PRO 4500 / RTX 4090:** Best balance of speed and price.
+   * **RTX A4500 / RTX A5000 / RTX 4000 Ada:** Budget options. They work, but the AI may have slightly slower response times or long silences.
+   * **RTX 5090 /  Other expensive GPUs:** They'll work great but are completely overkill, only use if availability calls for it. <br> <br>
+   
+3. In **Storage Configuration**, Make sure "Volume Disk" is selected.
 4. Scroll to the bottom and click **Deploy On-Demand**. 
 5. Look at the "Connect" Tab and wait about 5 minutes for "Port 8998 PersonaPlex" to be green, then click on it. If there's a Cloudflare error, check the "Logs" tab for errors.
 
