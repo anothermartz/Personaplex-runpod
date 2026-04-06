@@ -21,12 +21,11 @@ Based on https://github.com/surebabu2007/Personaplex-oneclicker
    *(⚠️ NOTE: You MUST select a GPU with at least **20GB** of VRAM. 16GB cards like the A4000 or 2000 Ada will crash with an Out of Memory error!)*
 3. In Storage Configuration, Select "Volume Disk" and make sure it's 40GB.
 4. Scroll to the bottom and click **Deploy On-Demand**. 
-5. Look at the "Connect" Tab and wait for "Port 8998 PersonaPlex" to be green, then click on it. If there's a Cloudflare error, check the "Logs" tab for errors.
+5. Look at the "Connect" Tab and wait about 5 minutes for "Port 8998 PersonaPlex" to be green, then click on it. If there's a Cloudflare error, check the "Logs" tab for errors.
 
-> ⏳ **Initial Setup Time:** The very first time you boot the pod, it will take about **5 minutes** to download the 16GB AI model.
+> ⏳ **Setup Time:** It will take about **5 minutes** to get running as it needs to download a bunch of dependencies, about 16GB of models and get everything loaded.
 > Check the pod's "Logs" tab; Wait for it to say `__main__ - INFO - Access the Web UI directly at [IP]` But that IP won't work, instead go to the "Connect" tab.
-> After stopping the pod, it will not need to redownload the models the next time you start it so it should only take 1 minute to boot.
 
-> ⚠️ **Billing Warning: Stop vs. Terminate**
+> ⚠️ **Billing Warning: Make sure you Stop and Terminate your pod when done!**
 > * **Stopping** the pod pauses the expensive GPU charges, but you will still be charged about 24 cents a day for the 40GB storage drive holding your model.
-> * **Terminating** the pod deletes the drive and stops **all** charges completely. If you are done playing for a while and don't mind waiting 5 minutes to redownload the model again, Terminate after stopping!
+> * **Terminating** the pod deletes the drive and stops **all** charges completely.
